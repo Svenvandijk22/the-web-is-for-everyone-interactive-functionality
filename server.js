@@ -24,6 +24,29 @@ app.engine('liquid', engine.express())
 app.set('views', './views')
 
 
+
+app.get('/', async function (request, response) {
+   // Render index.liquid uit de Views map
+   // Geef hier eventueel data aan mee
+     const params = {
+    // Sorteer op naam
+    // 'sort': 'name',
+ 
+    // Geef aan welke data je per persoon wil terugkrijgen
+    'fields': 'name,image',
+ 
+    // Combineer meerdere filters
+ 
+  }
+
+ const productResponse = await fetch('https://fdnd-agency.directus.app/items/milledoni_products/?' + new URLSearchParams(params))
+ 
+const productResponseJSON = await productResponse.json()
+  console.log(productResponseJSON.data)
+   response.render('index.liquid',{products: productResponseJSON.data}) 
+})
+
+
 console.log('Let op: Er zijn nog geen routes. Voeg hier dus eerst jouw GET en POST routes toe.')
 
 /*
@@ -68,7 +91,29 @@ app.post(…, async function (request, response) {
   response.redirect(303, …)
 })
 */
+app.use(express.urlencoded({ extended: true }));
 
+app.post("/", async function (request, response) {
+  try {
+    await fetch(
+      "https://fdnd-agency.directus.app/items/milledoni_users_milledoni_products_1",
+      {
+        method: "POST",
+        body: JSON.stringify({
+          milledoni_users_id: 58,
+          milledoni_products_id: request.body.id,
+        }),
+        headers: {
+          "Content-Type": "application/json;charset=UTF-8",
+        },
+      },
+    );
+  } catch (error) {
+    console.error(error);
+  }
+
+  response.redirect(303, "/");
+});
 
 // Stel het poortnummer in waar Express op moet gaan luisteren
 // Lokaal is dit poort 8000; als deze applicatie ergens gehost wordt, waarschijnlijk poort 80

@@ -1,0 +1,20 @@
+{% render 'partials/head.liquid' %}
+
+ <div class="chatbot">
+    
+    <div class="chat-window">
+        <!-- berichten komen hier -->
+        <div class="message bot">Hallo! Waar kan ik je mee helpen?</div>
+
+        <div class="message user">Ik heb een vraag.</div>
+    </div>
+
+    <div class="chat-input">
+        <form>
+            <input type="text" placeholder="Ik ben op zoek naar een cadeau voor..." />
+            <button type="submit"><img src="assets/sendicon.svg"></button>
+        </form>
+    </div>
+
+
+{% render 'partials/footer.liquid' %}
