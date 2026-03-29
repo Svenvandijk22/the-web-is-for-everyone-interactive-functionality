@@ -22,8 +22,10 @@
 <section class="opgeslagen-grid">
   {% for product in likedProducts %}
     <article class="opgeslagen-product">
-      <h2>{{ product.milledoni_products_id.name }}</h2>
+       <img class="strikje-twee" src="/assets/strikje.svg" alt="strikje">
+      
       <img src="{{ product.milledoni_products_id.image }}" alt="{{ product.milledoni_products_id.name }}">
+      <h2>{{ product.milledoni_products_id.name }}</h2>
       <p>{{ product.milledoni_products_id.amount }}</p>
     </article>
   {% endfor %}
