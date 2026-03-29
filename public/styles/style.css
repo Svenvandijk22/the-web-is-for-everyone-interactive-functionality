@@ -339,6 +339,7 @@ main {
 
 
 .opgeslagen-grid {
+    margin-left: 200px;
 
 
 
@@ -346,28 +347,35 @@ main {
     @media (min-width: 955px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 40px;
     }
 
- .strikje-twee {
-          top: -79px;
+    .strikje-twee {
+        top: -79px;
         position: absolute;
         width: 50px;
         height: 50px;
         left: 130px;
     }
 
-    
-        img{    border-radius: 25px;
-                width: 250px;
-                height: 240px;
-                margin-top: 40px;
-        
-        }
+
+
+
+
+
+    img {
+        border-radius: 25px;
+        width: 250px;
+        height: 240px;
+        margin-top: 40px;
+
+    }
+
     .opgeslagen-product {
         position: relative;
         width: 300px;
         margin-top: 60px;
-       
+
         border: #E0B000 solid 2px;
         border-radius: 25px;
         background-color: white;
@@ -376,16 +384,48 @@ main {
 
 
 
+        p {
+            font-family: 'parkisans', Arial, Helvetica, sans-serif;
+        }
 
-        
 
         h2 {
             font-family: 'parkisans', Arial, Helvetica, sans-serif;
         }
     }
 
-   
 
 
-    .opgeslagen-product:nth-child(1n) {}
+
+    .opgeslagen-product:nth-child(1n) {
+
+
+
+        @media (min-width: 955px) {
+            height: 440px;
+            margin-top: 130px;
+        }
+
+    }
+
+    .opgeslagen-product:nth-child(2n) {
+
+
+
+        @media (min-width: 955px) {
+            height: 500px;
+            margin-top: 70px;
+
+        }
+    }
+
+    .opgeslagen-product:nth-child(3n) {
+
+        @media (min-width: 955px) {
+            margin-top: 160px;
+
+            height: 500px;
+
+        }
+    }
 }
