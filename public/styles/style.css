@@ -319,8 +319,24 @@ main {
                 background: none;
             }
 
+
+
+
             button {
-                background-color: none;
+
+                background: none;
+                border: none;
+                cursor: pointer;
+                margin-top: -70px;
+                padding-left: 25%;
+
+
+                .lijstje {
+
+                    padding: 50px;
+                    width: 35px;
+                    height: 35px;
+                }
             }
 
         }
