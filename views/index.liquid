@@ -53,7 +53,7 @@
         Op zoek naar een leuk cadeau voor iemand van 21 jaar? Hier vind je een aantal originele cadeau-suggesties,
         gespot door de Milledoni community van cadeauspotters
       </p>
-   <button id="filterKnop">
+   <button class="filterbutton" id="filterKnop">
     <img src="assets/filtericon.png"> Filter
 </button>
     </div>
@@ -66,7 +66,7 @@
           <img src="{{ product.image }}" alt="product">
           <h2>{{ product.name }}</h2>
 
-          <form method="post" action="/" class="like-form">
+          <form method="post" action="opslaan" class="like-form">
        
             <button type="submit" class="lijst-button" value="{{ product.id }}" name="id" >
               <img class="lijstje" src="/assets/lijstje.png" alt="lijst">

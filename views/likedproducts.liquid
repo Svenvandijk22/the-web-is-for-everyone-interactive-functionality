@@ -27,6 +27,12 @@
       <img src="{{ product.milledoni_products_id.image }}" alt="{{ product.milledoni_products_id.name }}">
       <h2>{{ product.milledoni_products_id.name }}</h2>
       <p>{{ product.milledoni_products_id.amount }}</p>
+        <form method="post" action="verwijder" class="like-form">
+       
+            <button type="submit" class="lijst-button" value="{{ product.milledoni_products_id.id }}" name="id" >
+              <img class="lijstje" src="/assets/lijstje.png" alt="lijst">
+            </button>
+          </form>
     </article>
   {% endfor %}
 </section>
