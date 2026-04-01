@@ -32,19 +32,23 @@
       </form>
     </div>
   </div>
+  
+  <form method="GET" action="/">
+    <div class="filter-overzicht" id="filterMenu">
+      <img src="assets/strikje2.svg" alt="strikje">
+      <h2>Zoek het perfecte cadeau!</h2>
 
-  <div class="filter-overzicht" id="filterMenu">
-    <img src="assets/strikje2.svg" alt="strikje">
-    <h2>Zoek het perfecte cadeau!</h2>
+      <div class="sorteren-overzicht">
+        
+      <a href="?sort=laag">prijs van laag naar hoog</a>
+  <a href="?sort=hoog">prijs van hoog naar laag</a>
+      </div>
 
-    <div class="sorteren-overzicht">
-      <a>leeftijd</a>
-      <a>Ik zoek voor</a>
-      <a>houdt van</a>
+     
     </div>
-
-    <button>Zoek</button>
-  </div>
+  </form> 
+ 
+   
 
   <div class="producten">
     <div class="titel">
@@ -65,6 +69,7 @@
          
           <img src="{{ product.image }}" alt="product">
           <h2>{{ product.name }}</h2>
+         
 
           <form method="post" action="opslaan" class="like-form">
        

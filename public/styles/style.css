@@ -90,6 +90,11 @@ header {
         gap: 8px;
         font-family: 'parkisans';
 
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
     }
 
 }
@@ -277,7 +282,7 @@ main {
             border-radius: 25px;
             background-color: white;
             text-align: center;
-            height: 440px;
+            height: 500px;
             box-shadow: inset 5px 5px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
             transition: box-shadow 0.2s ease, transform 0.2s ease;
@@ -292,7 +297,7 @@ main {
             }
 
             .strikje {
-                top: -173px;
+                top: -223px;
                 left: 43%;
                 width: 50px;
                 margin-top: 40px;
@@ -303,11 +308,12 @@ main {
 
 
             img {
+                padding-top: 50px;
 
                 border-radius: 25px;
                 width: 250px;
                 height: 240px;
-                
+
             }
 
             form img {
@@ -335,7 +341,7 @@ main {
                 background: none;
                 border: none;
                 cursor: pointer;
-                
+
 
 
                 .lijstje {
@@ -381,9 +387,23 @@ main {
         left: 130px;
     }
 
+    button {
 
+        background: none;
+        border: none;
+        cursor: pointer;
+            background-color: none;
+    }
 
+    .lijstjemin {
 
+        padding: 50px;
+        width: 35px;
+        height: 7px;
+        margin: 0;
+    
+
+    }
 
 
     img {
@@ -403,7 +423,7 @@ main {
         border-radius: 25px;
         background-color: white;
         text-align: center;
-        height: 440px;
+        height: 500px;
 
 
 
@@ -425,7 +445,7 @@ main {
 
 
         @media (min-width: 955px) {
-            height: 440px;
+            height: 500px;
             margin-top: 130px;
         }
 
@@ -447,8 +467,42 @@ main {
         @media (min-width: 955px) {
             margin-top: 160px;
 
-            height: 500px;
+            height: 550px;
 
         }
     }
+
+    .opgeslagen-product:nth-child(4n) {
+
+        @media (min-width: 955px) {
+            margin-top: 160px;
+
+            height: 550px;
+
+        }
+    }
+
+    .opgeslagen-product:nth-child(5n) {
+
+        @media (min-width: 955px) {
+            margin-bottom: 160px;
+
+            height: 550px;
+
+        }
+    }
+
+    .opgeslagen-product:nth-child(6n) {
+
+        @media (min-width: 955px) {
+            margin-bottom: 230px;
+
+            height: 550px;
+
+        }
+    }
+
+
+
+
 }
