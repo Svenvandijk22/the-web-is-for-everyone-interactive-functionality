@@ -1,7 +1,8 @@
 # Interactive Functionality
 
+# Milledoni
 
-
+Milledoni is een online cadeau-inspiratieplatform waar gebruikers op een eenvoudige manier originele en passende cadeaus kunnen vinden. De website werkt met een community van cadeauspotters die cadeau-ideeën verzamelen en delen. Gebruikers kunnen filteren op verschillende kenmerken zoals leeftijd, budget en gelegenheid. De producten worden niet direct verkocht op de website, maar via externe webshops aangeboden.
 
 ## Inhoudsopgave
 
@@ -13,6 +14,9 @@
   * [Licentie](#licentie)
 
 ## Beschrijving
+
+ik heb deze sprint me gefocusd op de 
+
 <!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
 <!-- Voeg een mooie poster visual of video toe 📸 -->
 <!-- Voeg een link toe naar GitHub Pages 🌐-->
