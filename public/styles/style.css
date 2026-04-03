@@ -34,12 +34,10 @@ header {
     }
 }
 
-.filter-overzicht.open {
-    display: block;
-}
-
 .filter-overzicht {
-    display: none;
+    pointer-events: none;
+    opacity: 0;
+
     position: absolute;
     border: #E0B000 solid 5px;
     background-color: #20A687;
@@ -51,6 +49,11 @@ header {
     border-radius: 30px;
 
 
+    &.open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
 
     img {
         width: 120px;
