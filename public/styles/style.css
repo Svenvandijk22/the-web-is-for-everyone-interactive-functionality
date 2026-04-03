@@ -58,9 +58,7 @@ header {
         position: absolute;
         top: -103px;
         left: 290px;
-
     }
-
 
     button {
         margin-left: 80px;
@@ -71,7 +69,6 @@ header {
         font-size: 25px;
         border: none;
     }
-
 
     h2 {
         font-family: 'parkisans';
@@ -97,6 +94,11 @@ header {
 
     }
 
+@media (prefers-reduced-motion: reduce) {
+    .filter-overzicht {
+        transition: none;
+        transform: translateY(0);
+    }
 }
 
 main {
@@ -392,7 +394,7 @@ main {
         background: none;
         border: none;
         cursor: pointer;
-            background-color: none;
+        background-color: none;
     }
 
     .lijstjemin {
@@ -401,7 +403,7 @@ main {
         width: 35px;
         height: 7px;
         margin: 0;
-    
+
 
     }
 
