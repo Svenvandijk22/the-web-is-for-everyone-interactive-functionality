@@ -43,11 +43,13 @@ header {
     background-color: #20A687;
     height: 500px;
     width: 750px;
-    left: 400px;
-    z-index: 20;
+    left: 25%;
     top: 90px;
+    z-index: 999;
     border-radius: 30px;
 
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 
     &.open {
         opacity: 1;
@@ -90,12 +92,12 @@ header {
         gap: 8px;
         font-family: 'parkisans';
 
-        a{
+        a {
             text-decoration: none;
             color: black;
         }
-
     }
+}
 
 @media (prefers-reduced-motion: reduce) {
     .filter-overzicht {
