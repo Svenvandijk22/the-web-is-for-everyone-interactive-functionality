@@ -20,7 +20,7 @@ Tijdens deze sprint heb ik mij gefocust op drie belangrijke onderdelen binnen he
 
 Producten opslaan
 
-Gebruikers kunnen producten opslaan in een persoonlijke lijst. Deze worden weergegeven op de liked products pagina.
+Gebruikers kunnen producten opslaan in een persoonlijke lijst. Deze worden weergegeven op de index pagina pagina.
 ```
 app.post("/opslaan", async function (request, response) {
   await fetch(
@@ -41,6 +41,7 @@ app.post("/opslaan", async function (request, response) {
 });
 
 ```
+
 
 Producten verwijderen
 
@@ -104,6 +105,26 @@ om ingeladen data weer te geven heb ik gebruik gemaakt van deze loops in me liqu
         </div>
       {% endfor %}
 
+```
+
+
+loop die ik gebruik voor mijn products pagina: 
+```
+  {% for product in likedProducts %}
+    <article class="opgeslagen-product">
+       <img class="strikje-twee" src="/assets/strikje.svg" alt="strikje">
+      
+      <img src="{{ product.milledoni_products_id.image }}" alt="{{ product.milledoni_products_id.name }}">
+      <h2>{{ product.milledoni_products_id.name }}</h2>
+      <p>{{ product.milledoni_products_id.amount }}</p>
+        <form method="post" action="verwijder" class="like-form">
+       
+            <button type="submit" class="lijst-button" value="{{ product.milledoni_products_id.id }}" name="id" >
+              <img class="lijstjemin" src="/assets/minnetje.png" alt="lijst">
+            </button>
+          </form>
+    </article>
+  {% endfor %}
 ```
 
 ## Installatie
