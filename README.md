@@ -88,7 +88,11 @@ Tot slot heb ik een filter- en sorteersysteem toegevoegd als aanvulling op de be
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framework of library gebruikt? -->
 
 ## Installatie
-<!-- Bij Installatie staat hoe een andere developer aan jouw repo kan werken -->
+1 npm install in de terminal Hiermee installeer je de benodigde packages .
+
+2 npm start in de terminal Hiermee start je het project.
+
+3 Open vervolgens http://localhost:8000 om de website te zien in de browser
 
 
 ## Bronnen
