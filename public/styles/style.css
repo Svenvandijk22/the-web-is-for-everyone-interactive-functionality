@@ -267,12 +267,18 @@ main {
             width: 25px;
             height: 25px;
         }
+
+
+          @media (min-width: 955px) {
+            margin: 0;
+         
+        }
     }
 
     .productenlijst {
         margin-left: 30px;
 
-        @media (min-width: 955px) {
+        @media (min-width: 655px) {
 
             display: grid;
             grid-template-columns: 1fr 1fr;
