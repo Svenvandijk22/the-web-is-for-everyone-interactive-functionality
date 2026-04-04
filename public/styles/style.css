@@ -203,7 +203,7 @@ main {
 
     .titel {
 
-
+         
         text-align: center;
         margin-left: 0%;
         padding-left: 35px;
@@ -237,6 +237,13 @@ main {
             }
         }
 
+ @media (min-width: 655px) {
+
+            margin-left: 6%;
+          
+        }
+
+   
         @media (min-width: 955px) {
 
             margin-left: 6%;
@@ -384,7 +391,11 @@ main {
     margin-left: 200px;
 
 
-
+   @media (min-width: 655px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        margin-left: 40px;
+    }
 
     @media (min-width: 955px) {
         display: grid;
