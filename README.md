@@ -83,7 +83,17 @@ Tot slot heb ik een filter- en sorteersysteem toegevoegd als aanvulling op de be
 <!-- Voeg een link toe naar GitHub Pages 🌐-->
 
 ## Gebruik
+
+User story: Als gebruiker wil ik producten kunnen opslaan in mijn persoonlijke lijst, zodat ik interessante cadeaus later kan bekijken en vergelijken.
+
+
+op de categorie pagina kan je op de producten klikkken en die toevoegen aan 
+
 <!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
+
+
+https://github.com/user-attachments/assets/a266a1f9-fa22-4fcd-b534-56227a09850a
+
 
 ## Kenmerken
 om ingeladen data weer te geven heb ik gebruik gemaakt van deze loops in me liquid
