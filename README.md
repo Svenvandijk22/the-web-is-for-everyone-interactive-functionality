@@ -85,7 +85,26 @@ Tot slot heb ik een filter- en sorteersysteem toegevoegd als aanvulling op de be
 <!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framework of library gebruikt? -->
+om ingeladen data weer te geven heb ik gebruik gemaakt van deze loops in me liquid
+```
+ {% for product in products %}
+        <div class="producten-kaart">
+          <img class="strikje" src="/assets/strikje.svg" alt="strikje">
+         
+          <img src="{{ product.image }}" alt="product">
+          <h2>{{ product.name }}</h2>
+         
+
+          <form method="post" action="opslaan" class="like-form">
+       
+            <button type="submit" class="lijst-button" value="{{ product.id }}" name="id" >
+              <img class="lijstje" src="/assets/lijstje.png" alt="lijst">
+            </button>
+          </form>
+        </div>
+      {% endfor %}
+
+```
 
 ## Installatie
 1 npm install in de terminal Hiermee installeer je de benodigde packages .
