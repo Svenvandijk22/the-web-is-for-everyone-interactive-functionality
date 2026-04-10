@@ -34,25 +34,40 @@
       </form>
     </div>
   </div>
-  
 
-  
+  <details>
+    <summary>
+      <img src="assets/chat-icon.svg" alt="Open chatbot">
+    </summary>
+
+    <div class="chatbot">
+      <div class="chat-window">
+        <div class="message bot">Hallo! Waar kan ik je mee helpen?</div>
+        <div class="message user">Ik heb een vraag.</div>
+      </div>
+
+      <div class="chat-input">
+        <form>
+          <input type="text" name="bericht" placeholder="Ik ben op zoek naar een cadeau voor..." >
+          <button id="verzenden" type="submit">
+            <img src="assets/sendicon.svg" alt="Verstuur bericht">
+          </button>
+        </form>
+      </div>
+    </div>
+  </details>
+
   <form method="GET" action="/">
     <div class="filter-overzicht" id="filterMenu">
       <img src="assets/strikje2.svg" alt="strikje">
       <h2>Zoek het perfecte cadeau!</h2>
 
       <div class="sorteren-overzicht">
-        
-      <a href="?sort=laag">prijs van laag naar hoog</a>
-  <a href="?sort=hoog">prijs van hoog naar laag</a>
+        <a href="?sort=laag">prijs van laag naar hoog</a>
+        <a href="?sort=hoog">prijs van hoog naar laag</a>
       </div>
-
-     
     </div>
-  </form> 
- 
-   
+  </form>
 
   <div class="producten">
     <div class="titel">
@@ -61,23 +76,19 @@
         Op zoek naar een leuk cadeau voor iemand van 21 jaar? Hier vind je een aantal originele cadeau-suggesties,
         gespot door de Milledoni community van cadeauspotters
       </p>
-   <button class="filterbutton" id="filterKnop">
-    <img src="assets/filtericon.png" alt="filter"> Filter
-</button>
+      <button class="filterbutton" id="filterKnop"><img src="assets/filtericon.png" alt="filter"> Filter</button>
     </div>
 
     <div class="productenlijst">
       {% for product in products %}
         <div class="producten-kaart">
           <img class="strikje" src="/assets/strikje.svg" alt="strikje">
-         
+
           <img src="{{ product.image }}" alt="product">
           <h2>{{ product.name }}</h2>
-         
 
           <form method="post" action="opslaan" class="like-form">
-       
-            <button type="submit" class="lijst-button" value="{{ product.id }}" name="id" >
+            <button type="submit" class="lijst-button" value="{{ product.id }}" name="id">
               <img class="lijstje" src="/assets/lijstje.png" alt="lijst">
             </button>
           </form>
